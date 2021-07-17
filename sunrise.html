@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise</title>
+    <style>
+        @keyframes sun{
+            0%{
+                top:880px;
+                background-color:rgb(209, 181, 105);
+                box-shadow: 5px 5px 10px rgb(255, 60, 0);
+            }
+            50%{
+                background-image: linear-gradient(red,rgb(200, 200, 101));
+            }
+            75%{
+                background-image: linear-gradient(red,rgb(228, 228, 74));
+            }
+            100%{
+                top: 0;
+                left: 50px;
+                background-image: linear-gradient(red,rgb(226, 226, 141),orange);
+            }
+        }
+        .stage{
+            width:100%;
+            height:1000px;
+            background-image: linear-gradient(rgb(241, 241, 113),rgb(209, 83, 25),rgb(54, 29, 29));
+        }
+        .sun{
+            width:120px;
+            height:120px;
+            border-radius: 60px;
+            background-color: rgb(221, 115, 16);
+            position: relative;
+            left: 150px;
+            animation: sun 2s ease-in-out 0.2s infinite alternate;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+<body>
+    <div class="stage">
+        
+        <div class="sun"></div>
+    </div>    
+</body>
+</html>
